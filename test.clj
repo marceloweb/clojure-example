@@ -7,3 +7,10 @@
   (* value 0.9))
 
 (apply-discount 100)
+
+(defn value-discounted 
+  "Return value discounted"
+  [value]
+  (* value (- 1 0.10)))
+
+(value-discounted 150)
