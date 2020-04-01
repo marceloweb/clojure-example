@@ -14,3 +14,14 @@
   (* value (- 1 0.10)))
 
 (value-discounted 150)
+
+
+(defn value-discounted
+  "Return value discounted 10%"
+  [gross-amount]
+  (let [discount (/ 10 100)]
+   (println "Processing..." discounted)
+   (* gross-amount (- 1 discounted)))
+  )
+
+(value-discounted 100)
