@@ -1,7 +1,7 @@
 (defn print-message []
   (println "Welcome to paradise"))
 
-(print-menssage)
+(print-message)
 
 (defn apply-discount [value]
   (* value 0.9))
@@ -15,13 +15,16 @@
 
 (value-discounted 150)
 
+(class 90N)
+(class 90M)
 
 (defn value-discounted
   "Return value discounted 10%"
   [gross-amount]
-  (let [discount (/ 10 100)]
+  (let [discounted-rate (/ 10 100)
+        discounted (* gross-amount discounted-rate)]
    (println "Processing..." discounted)
-   (* gross-amount (- 1 discounted)))
+   (* gross-amount (- gross-amount discounted)))
   )
 
 (value-discounted 100)
