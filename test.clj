@@ -24,7 +24,7 @@
   (let [discounted-rate (/ 10 100)
         discounted (* gross-amount discounted-rate)]
    (println "Processing..." discounted)
-   (* gross-amount (- gross-amount discounted)))
+   (- gross-amount discounted))
   )
 
 (value-discounted 100)
